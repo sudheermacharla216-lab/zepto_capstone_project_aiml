@@ -27,3 +27,23 @@ The notebook has been executed through the project pipeline and the generated ar
 ## Git workflow verification
 
 The project was completed using a feature branch workflow. A feature branch was created, received at least two commits, and was merged back into the main branch with a merge commit.
+
+
+## Docker Verification
+
+Docker deployment was successfully verified on Windows using Docker Desktop.
+
+Commands tested:
+- docker build -t zepto-support support_assistant
+- docker run --rm -p 7860:7860 -e MOCK_LLM=1 zepto-support
+
+Verification results:
+- Docker image build: PASSED
+- Docker container run: PASSED
+- FastAPI on port 7860: PASSED
+- POST /ask policy query: HTTP 200
+- Policy retrieval sources: doc_02, doc_06, doc_05
+- POST /ask general query: HTTP 200
+- LangGraph routing: PASSED
+- Structured answer/sources/confidence output: PASSED
+- MOCK_LLM mode: PASSED
