@@ -23,3 +23,7 @@ Include code, required Markdown explanations, titanic.csv, SQL outputs and repro
 
 ## Verification status
 The notebook has been executed through the project pipeline and the generated artifacts, machine-learning models, retrieval pipeline and FastAPI MOCK_LLM endpoint have been checked. Docker configuration is included; the Docker image should also be built and run on a Docker-capable machine before final submission.
+
+## Git workflow verification
+
+The project was completed using a feature branch workflow. A feature branch was created, received at least two commits, and was merged back into the main branch with a merge commit.
