@@ -1,0 +1,5 @@
+chroma_data/
+embedding_model/
+__pycache__/
+*.log
+.env

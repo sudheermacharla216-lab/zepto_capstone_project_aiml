@@ -1,0 +1,6 @@
+__pycache__/
+.ipynb_checkpoints/
+.env
+*.log
+support_assistant/chroma_data/
+support_assistant/embedding_model/
